@@ -28,10 +28,10 @@ class aclient(discord.Client):
 
 client = aclient()
 tree = app_commands.CommandTree(client)
-punishment_path = r'C:\Users\LENOVO\Desktop\Bot_Hosting\Data\Lua_Studio\punishment.json'
-account_path = r'C:\Users\LENOVO\Desktop\Bot_Hosting\Data\Lua_Studio\account.json'
-license_path = r'C:\Users\LENOVO\Desktop\Bot_Hosting\Data\Lua_Studio\license.json'
-purchase_path = r'C:\Users\LENOVO\Desktop\Bot_Hosting\Data\Lua_Studio\purchase.json'
+punishment_path = 'punishment.json'
+account_path = 'account.json'
+license_path = 'license.json'
+purchase_path = 'purchase.json'
 
 #unishment_path = r'C:\Users\helloworld\Desktop\Discord_Work\LUA_Studio\LUABOT\Data\punishment.json'
 #account_path = r'C:\Users\helloworld\Desktop\Discord_Work\LUA_Studio\LUABOT\Data\account.json'
