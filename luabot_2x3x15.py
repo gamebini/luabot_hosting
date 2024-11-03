@@ -11,6 +11,7 @@ from discord import ui
 from discord.ext import commands
 import json
 import tempfile
+import os
 
 class aclient(discord.Client):
     def __init__(self):
@@ -1093,4 +1094,6 @@ async def slash2(interaction: discord.Interaction, 대상:discord.Member, 코드
         await interaction.response.send_message(embed=embed, ephemeral=True)
     else:
         await interaction.response.send_message(embed=errorembed)
-client.run(bot_token)
+
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
